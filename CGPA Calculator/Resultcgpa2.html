@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+Calculate SGPA to CGPA
+</title>
+<style>
+#c
+{
+  color:aliceblue;
+}
+.a
+{
+  font-Size:20px;
+  background-color:azure;
+}
+.b
+{
+  color:white;
+  font-size:30px;
+  background-color:Royalblue;
+  border-color:royalblue;
+}
+.b:hover
+{
+  background-color:cornflowerblue;
+}
+</style>
+</head>
+<body bgcolor="Royalblue" align="center">
+<marquee style="background-color:Darkblue; font-size:100px;" behavior="alternate" id="c">Calculate SGPA To CGPA</marquee>
+<br/><br/><h1>Enter 1st semester SGPA <input type="text" class="a" id="a"></input><br/><br/></h1>
+<h1>Result in CGPA</h1><input type="text" class="a" id="b"></input><br/><br/>
+<br/><button onclick="my()" class="b"> click here </button>
+<script>
+function my()
+{
+var a = Number(document.getElementById("a").value);
+var i;
+var b = (a*20)/20;
+var n = b.toFixed(2);
+document.getElementById("b").value = n;	
+}
+</script>
+
+</body>
+</html>

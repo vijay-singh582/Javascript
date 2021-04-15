@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>
+Calculate SGPA to CGPA
+</title>
+<style>
+.a
+{
+  font-Size:20px;
+}
+</style>
+</head>
+<body bgcolor="Royalblue">
+<marquee style="background-color:Darkblue; font-size:100px;" behavior="alternate">Calculate SGPA to CGPA</marquee>
+<h2>Enter 1st semester SGPA <input type="text" class="a" id="h"></input><br/><br/></h2>

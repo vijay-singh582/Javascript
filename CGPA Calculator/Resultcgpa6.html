@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+Calculate SGPA to CGPA
+</title>
+<style>
+#a
+{
+  color:aliceblue;
+}
+.a
+{
+  font-Size:20px;
+}
+.b
+{
+  color:white;
+  font-size:30px;
+  background-color:Royalblue;
+  border-color:royalblue;
+}
+.b:hover
+{
+  background-color:cornflowerblue;
+}
+</style>
+</head>
+<body bgcolor="Royalblue" align="center">
+<marquee style="background-color:Darkblue; font-size:100px;" behavior="alternate" id="a">Calculate SGPA To CGPA</marquee>
+<br/><h2>Enter 1st semester SGPA <input type="text" class="a" id="b"></input><br/></h2>
+<h2>Enter 2nd semester SGPA  <input type="text" class="a" id="c"></input><br/></h2>
+<h2>Enter 3rd semester SGPA  <input type="text" class="a" id="d"></input><br/></h2>
+<h2>Enter 4th semester SGPA  <input type="text" class="a" id="e"></input><br/></h2>
+<h2>Enter 5th semester SGPA  <input type="text" class="a" id="f"></input><br/><br/></h2>
+<h1>Result in CGPA</h1><input type="text" class="a" id="g"></input><br/><br/>
+<br/><button onclick="my()" class="b"> click here </button> 
+<script>
+function my()
+{
+  var a = Number(document.getElementById("b").value);
+  var b = Number(document.getElementById("c").value);
+  var c = Number(document.getElementById("d").value);
+  var d = Number(document.getElementById("e").value);
+  var e = Number(document.getElementById("f").value);
+  var f = (a*20);
+  var z = (b*26);
+  var g = (c*26);
+  var h = (d*26);
+  var i = (e*26);
+  var j = (f+z+g+h+i)/124;
+  var n = j.toFixed(2);
+  document.getElementById("g").value = n;	
+}
+</script>
+</body>
+</html>
